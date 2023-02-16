@@ -237,6 +237,7 @@ nav {
     width: 100%;
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
+    z-index: 999;
 }
 
 .fixed-nav .links a {
@@ -511,6 +512,7 @@ Specfic Styles
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-top: 20px;
 }
 
 .card {
@@ -540,6 +542,7 @@ Specfic Styles
 
 .text-card p {
     color: var(--clr-primary-1);
+    font-size: 1.3rem;
 }
 
 .icon-card {

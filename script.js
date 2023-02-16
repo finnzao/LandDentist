@@ -18,7 +18,51 @@ navToggle.addEventListener("click", function () {
         linksContainer.style.height = 0;
     }
 })
+//
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.top-link');
 
+window.addEventListener('scroll', function () {
+    const scrollHeight = window.pageYOffset;
+    const navHeight = navbar.getBoundingClientRect().height;
+    if (scrollHeight > navHeight) {
+        navbar.classList.add('fixed-nav');
+    } else {
+        navbar.classList.remove('fixed-nav');
+    };
+
+    if (scrollHeight > 600) {
+        topLink.classList.add('show-link');
+    } else {
+        topLink.classList.remove('show-link');
+    };
+});
+//SMORTH  scrool
+const scrollLinks = document.querySelectorAll('.scroll-link');
+scrollLinks.forEach(function (link) {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        //navigate to spefic spot
+        const id = e.currentTarget.getAttribute("href").slice(1);//SEPRANDO STRINGS E PEGANDO APENAS O NOME , E REMOVENDO a #
+        const element = document.getElementById(id);
+        //caculando ponto especifico
+        const navHeight = navbar.getBoundingClientRect().height;
+        const containerHeight = linksContainer.getBoundingClientRect().height;
+        const fixedNav = navbar.classList.contains("fixed-nav");
+        let position = element.offsetTop - navHeight; //Representação  da localização do top do elemento em px na pagina
+        if (!fixedNav) {
+            position = position - navHeight;
+        };
+
+        if (navHeight > 82) {
+            position = position + containerHeight;
+        };
+        window.scrollTo({
+            left: 0, top: position,
+        });
+        linksContainer.style.height = 0;
+    });
+});
 //GLIDER SLIDE
 var $simpleCarousel = document.querySelector(".js-carousel--simple");
 new Glider($simpleCarousel, {
