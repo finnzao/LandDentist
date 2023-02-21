@@ -352,7 +352,7 @@ nav {
 header {
     min-height: 100vh;
     background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-        url(./hero-bcg.jpeg) center/cover no-repeat;
+        url(./media/banner.jpg) center/cover no-repeat;
 }
 
 .banner {
@@ -463,7 +463,9 @@ Specfic Styles
     background-color: var(--clr-grey-9);
 }
 
-
+.arrow-container{
+    display: none;
+}
 
 /*ABOUT*/
 #about {
@@ -653,11 +655,11 @@ Specfic Styles
 }
 
 @media (min-width: 768px) {
+
     .button-66 {
         padding: 16px 44px;
         min-width: 150px;
     }
-
 }
 
 /*MEDIA QUERRY*/
@@ -683,10 +685,21 @@ Specfic Styles
         display: block;
         margin-top: 60px;
     }
+    header {
+        background-position: 10px left;
+    }
 }
 
 @media (max-width:720px) {
-
+    .arrow-container{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    .fixed-nav {
+        display:block !important;
+    }
     .img-destkop {
         display: none;
     }
@@ -720,3 +733,93 @@ Specfic Styles
         text-align: center;
     }
 }
+/* icon: https://fortawesome.github.io/Font-Awesome/icons/ */
+/* Animation: https://daneden.github.io/animate.css/ */
+
+
+  
+  .arrow-container{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+
+  
+  .arrow-2{
+    width: 60px;
+    height: 60px;
+    background: #00BCD4;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    display: table;
+  }
+  
+  .arrow-2:before{
+    width: 52px;
+    height: 52px;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+  
+  .arrow-2 i.fa{
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #006064;
+  }
+  
+  /* Custom Animate.css */
+  
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.4, .4, .4);
+              transform: scale3d(.4, .4, .4);
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.4, .4, .4);
+              transform: scale3d(.4, .4, .4);
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+  }
