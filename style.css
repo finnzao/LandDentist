@@ -397,14 +397,16 @@ header {
     background: var(--clr-white);
 }
 
-footer {
+.footer {
+    display: flex;
+    justify-content: center;
     background: var(--clr-grey-1);
     padding: 1rem 1rem;
     height: auto;
 
 }
 
-footer p {
+.footer p {
     color: var(--clr-white);
     text-align: center;
     text-transform: capitalize;
@@ -731,6 +733,12 @@ Specfic Styles
         font-size: 1.5rem;
         padding: 20px;
         text-align: center;
+    }
+    .footer{
+        display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
     }
 }
 /* icon: https://fortawesome.github.io/Font-Awesome/icons/ */
