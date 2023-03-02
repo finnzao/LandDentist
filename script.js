@@ -8,7 +8,6 @@ const links = document.querySelector(".links");
 
 //
 navToggle.addEventListener("click", function () {
-    //linksContainer.classList.toggle("show-links") FORMA MANUAL ASSIM IRÀ PRECISAR AUMENTAR A ALTURA DA DIV TODA VEZ QUE TIVER UM NOVO ITEM
     const containerHeight = linksContainer.getBoundingClientRect().height
     const linksHeight = links.getBoundingClientRect().height
     console.log(linksHeight)
@@ -24,7 +23,6 @@ const topLink = document.querySelector('.top-link');
 const navHeight2 = navbar.getBoundingClientRect().height;
 window.addEventListener('scroll', function () {
     const scrollHeight = window.pageYOffset;
-    //const navHeight = navbar.getBoundingClientRect().height; //vericação constante da altura da barra de navageção faz a barra pisca então é necessario define fora do if
     const navHeight = 300;
     console.log(navHeight)
     if (scrollHeight > navHeight2) {
@@ -44,14 +42,12 @@ const scrollLinks = document.querySelectorAll('.scroll-link');
 scrollLinks.forEach(function (link) {
     link.addEventListener("click", (e) => {
         e.preventDefault();
-        //navigate to spefic spot
-        const id = e.currentTarget.getAttribute("href").slice(1);//SEPRANDO STRINGS E PEGANDO APENAS O NOME , E REMOVENDO a #
+        const id = e.currentTarget.getAttribute("href").slice(1);
         const element = document.getElementById(id);
-        //caculando ponto especifico
         const navHeight = navbar.getBoundingClientRect().height;
         const containerHeight = linksContainer.getBoundingClientRect().height;
         const fixedNav = navbar.classList.contains("fixed-nav");
-        let position = element.offsetTop - navHeight; //Representação  da localização do top do elemento em px na pagina
+        let position = element.offsetTop - navHeight;
         if (!fixedNav) {
             position = position - navHeight;
         };
