@@ -64,6 +64,11 @@ html {
     scroll-behavior: smooth;
 }
 
+mark {
+    background-color: var(--clr-primary-8);
+    font-weight: bold;
+}
+
 *,
 ::after,
 ::before {
@@ -465,7 +470,7 @@ Specfic Styles
     background-color: var(--clr-grey-9);
 }
 
-.arrow-container{
+.arrow-container {
     display: none;
 }
 
@@ -687,21 +692,25 @@ Specfic Styles
         display: block;
         margin-top: 60px;
     }
+
     header {
         background-position: 10px left;
     }
 }
 
 @media (max-width:720px) {
-    .arrow-container{
+    .arrow-container {
         display: block;
     }
-    #nav{
+
+    #nav {
         display: none;
     }
+
     .fixed-nav {
-        display:block !important;
+        display: block !important;
     }
+
     .img-destkop {
         display: none;
     }
@@ -732,21 +741,23 @@ Specfic Styles
         width: 100%;
         font-size: 1.5rem;
         padding: 20px;
-        text-align: center;
+        text-align: justify;
     }
-    .footer{
+
+    .footer {
         display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
     }
 }
+
 /* icon: https://fortawesome.github.io/Font-Awesome/icons/ */
 /* Animation: https://daneden.github.io/animate.css/ */
 
 
-  
-  .arrow-container{
+
+.arrow-container {
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -754,11 +765,11 @@ Specfic Styles
     bottom: 0;
     left: 0;
     right: 0;
-  }
-  
+}
 
-  
-  .arrow-2{
+
+
+.arrow-2 {
     width: 60px;
     height: 60px;
     background: #00BCD4;
@@ -768,9 +779,9 @@ Specfic Styles
     left: 20px;
     z-index: 1;
     display: table;
-  }
-  
-  .arrow-2:before{
+}
+
+.arrow-2:before {
     width: 52px;
     height: 52px;
     content: "";
@@ -778,56 +789,56 @@ Specfic Styles
     position: absolute;
     top: 2px;
     left: 2px;
-  }
-  
-  .arrow-2 i.fa{
+}
+
+.arrow-2 i.fa {
     font-size: 30px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     color: #006064;
-  }
-  
-  /* Custom Animate.css */
-  
-  .animated.hinge {
+}
+
+/* Custom Animate.css */
+
+.animated.hinge {
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  
-  @-webkit-keyframes zoomIn {
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes zoomIn {
     0% {
-      opacity: 0;
-      -webkit-transform: scale3d(.4, .4, .4);
-              transform: scale3d(.4, .4, .4);
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4);
     }
-  
+
     50% {
-      opacity: 0.5;
+        opacity: 0.5;
     }
-    
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  @keyframes zoomIn {
+}
+
+@keyframes zoomIn {
     0% {
-      opacity: 0;
-      -webkit-transform: scale3d(.4, .4, .4);
-              transform: scale3d(.4, .4, .4);
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4);
     }
-  
+
     50% {
-      opacity: 0.5;
+        opacity: 0.5;
     }
-    
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  .zoomIn {
+}
+
+.zoomIn {
     -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-  }
+    animation-name: zoomIn;
+}

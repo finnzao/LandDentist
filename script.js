@@ -21,11 +21,13 @@ navToggle.addEventListener("click", function () {
 //
 const navbar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
-
+const navHeight2 = navbar.getBoundingClientRect().height;
 window.addEventListener('scroll', function () {
     const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-    if (scrollHeight > navHeight) {
+    //const navHeight = navbar.getBoundingClientRect().height; //vericação constante da altura da barra de navageção faz a barra pisca então é necessario define fora do if
+    const navHeight = 300;
+    console.log(navHeight)
+    if (scrollHeight > navHeight2) {
         navbar.classList.add('fixed-nav');
     } else {
         navbar.classList.remove('fixed-nav');
