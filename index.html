@@ -1,324 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marque sua Consulta</title>
-    <link rel="shortcut icon" href="./media/LOGO PNG.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marque sua Consulta</title>
+        <link rel="shortcut icon" href="./media/LOGO PNG.png"
+            type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <header id="home">
-        <nav id="nav">
-            <div class="nav-center">
-                <div class="nav-header">
-                    <img src="./media/LOGO PNG.png" alt="icon" class="logo">
-                    <button class="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
+    <body>
+        <header id="home">
+            <nav id="nav">
+                <div class="nav-center">
+                    <div class="nav-header">
+                        <img src="./media/LOGO PNG.png" alt="icon" class="logo">
+                        <button class="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!--links -->
+                    <div class="links-container">
+                        <ul class="links">
+                            <li>
+                                <a href="#about" class="scroll-link">Sobre mim</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="scroll-link">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="scroll-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!--links -->
-                <div class="links-container">
-                    <ul class="links">
-                        <li>
-                            <a href="#about" class="scroll-link">Sobre mim</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="scroll-link">Serviços</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="scroll-link">Contato</a>
-                        </li>
-                    </ul>
+            </nav>
+            <!--banner-->
+            <div class="banner">
+                <div class="container">
+                    <h1>O melhor serviço odontológico para você </h1>
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://wa.me/message/BMPNVWC4QTNTM1"
+                        class="btn btn-white">Quero agendar minha consulta</a>
+                </div>
+                <div class="arrow-container animated fadeInDown">
+                    <a href="#about">
+                        <div class="arrow-2">
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="arrow-1 animated hinge infinite zoomIn"></div>
+                    </a>
                 </div>
             </div>
-        </nav>
-        <!--banner-->
-        <div class="banner">
+        </header>
+
+        <!--ABOUT-->
+        <section id="about" class="section about">
+            <div class="title">
+                <h2>Sobre <span>mim</span></h2>
+
+                <div class="img-mobile">
+                    <img
+                        src="./media/doctor_mobile-removebg-removebg-preview.png"
+                        alt srcset>
+                </div>
+                <div class="text">
+                    <p>Estou aqui para <mark>ajudá-lo</mark> a alcançar o <mark>sorriso
+                            dos seus sonhos</mark>. Oferecendo uma ampla gama de
+                        serviços odontológicos, desde limpezas regulares e
+                        check-ups até procedimentos mais complexos, como
+                        restauração e Exodontia.
+                        <br>Esforçando para tornar a experiência odontológica o
+                        mais <mark>confortável</mark> e livre de estresse
+                        possível.
+
+                    </p>
+                </div>
+                <div class="img-destkop">
+                    <img src="./media/doctor_desktop-removebg-preview.png" alt>
+                </div>
+            </div>
+        </section>
+        <!--SERVICES-->
+        <section id="services" class="section">
+            <div class="title">
+                <h2>
+                    <span>Serviços</span>
+                </h2>
+            </div>
+
+            <div class="grid display-destkop">
+
+                <div class="card">
+                    <div class="title-card">
+                        <h3>Prevenção</h3>
+                        <div class="icon-card">
+                            <img src="./media/prev.png" alt>
+                        </div>
+                    </div>
+                    <div class="text-card">
+                        <p>
+                            O melhor acompanhamento de confiança para prevenir
+                            problemas odontológicos que podem se agravar com o
+                            tempo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title-card">
+                        <h3>Limpeza</h3>
+                        <div class="icon-card">
+                            <img src="./media/checkTooth.png" alt>
+                        </div>
+                    </div>
+                    <div class="text-card">
+                        <p>
+                            Procedimento de limpeza ,como finalidade acabar com
+                            as impurezas e manter os dentes bonitos e bem
+                            cuidados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title-card">
+                        <h3>Exodontia</h3>
+                        <div class="icon-card">
+                            <img src="./media/exodontia.png" alt>
+                        </div>
+                    </div>
+                    <div class="text-card">
+                        <p>
+                            Extração de dente com o melhor atendimento e
+                            praticidade.Aqui você pode resolver sua dor na dores
+                            no dente do siso,faturados e entre outros.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title-card">
+                        <h3>Restauração</h3>
+                        <div class="icon-card">
+                            <img src="./media/res.png" alt>
+                        </div>
+                    </div>
+                    <div class="text-card">
+                        <p>
+                            Reconstrução tem um papel fundamental na manutenção
+                            dos dentes ,e da saúde do corpo.Garatatindo uma
+                            otimá mastigação, que é o primeiro passo para que a
+                            comida chegue ao sistema digestório da maneira
+                            correta.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title-card">
+                        <h3>Raspagem</h3>
+                        <div class="icon-card">
+                            <img src="./media/ras.png" alt>
+                        </div>
+                    </div>
+                    <div class="text-card">
+                        <p>
+                            A raspagem periodontal é um tratamento recomendado
+                            para curar diversos processos inflamatórios e
+                            infecciosos da gengiva.Além do mais, removendo o
+                            acúmulo de tártaro ou cálculo dental, melhorando a
+                            saúde dos tecidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title-card">
+                        <h3>Clareamento Dental</h3>
+                        <div class="icon-card">
+                            <img src="./media/shineTooth.png" alt>
+                        </div>
+                    </div>
+                    <div class="text-card">
+                        <p>
+                            Eliminar os pigmentos que deixam os dentes manchados
+                            ou escurecidos. Assim renovando o seu sorriso , e
+                            entregando uma melhor qualidade de vida.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--MOBILE-->
             <div class="container">
-                <h1>O melhor serviço odontológico para você </h1>
-                <a target="_blank" rel="noopener noreferrer" href="https://wa.me/message/BMPNVWC4QTNTM1" class="btn btn-white">Quero agendar minha consulta</a>
-            </div> 
-            <div class="arrow-container animated fadeInDown">
-                <a href="#about">
-                <div class="arrow-2">
-                  <i class="fa fa-angle-down"></i>
-                </div>
-                <div class="arrow-1 animated hinge infinite zoomIn"></div>
-             </a>
-              </div>
-        </div>
-    </header>
+                <div class="display-mobile">
+                    <article class="c-carousel c-carousel--simple">
+                        <div class="c-carousel__slides js-carousel--simple">
+                            <article class="c-carousel__slide">
+                                <div class="card mobile">
 
-    <!--ABOUT-->
-    <section id="about" class="section">
-        <div class="title">
-            <h2>Sobre <span>mim</span></h2>
+                                    <div class="title-card">
+                                        <h3>Prevenção</h3>
+                                        <div class="icon-card">
+                                            <img src="./media/prev.png" alt>
+                                        </div>
+                                    </div>
+                                    <div class="text-card">
+                                        <p>
+                                            O melhor acompanhamento de confiança
+                                            para prevenir problemas
+                                            odontológicos que podem se agravar
+                                            com o tempo.
 
-            <div class="img-mobile">
-                <img src="./media/doctor_mobile-removebg-removebg-preview.png" alt="" srcset="">
-            </div>
-            <div class="text">
-                <p>Estou aqui para <mark>ajudá-lo</mark> a alcançar o <mark>sorriso dos seus sonhos</mark>. Oferecendo uma ampla gama de serviços odontológicos, desde limpezas regulares e check-ups até procedimentos mais complexos, como restauração e Exodontia. 
-                    <br>Esforçando para tornar a experiência odontológica o mais <mark>confortável</mark> e livre de estresse possível.
-                   
-                </p>
-            </div>
-            <div class="img-destkop">
-                <img src="./media/doctor_desktop-removebg-preview.png" alt="">
-            </div>
-        </div>
-    </section>
-    <!--SERVICES-->
-    <section id="services" class="section">
-        <div class="title">
-            <h2>
-                <span>Serviços</span>
-            </h2>
-        </div>
-
-        <div class="grid display-destkop">
-
-            <div class="card">
-                <div class="title-card">
-                    <h3>Prevenção</h3>
-                    <div class="icon-card">
-                        <img src="./media/prev.png" alt="">
-                    </div>
-                </div>
-                <div class="text-card">
-                    <p>
-                        O melhor acompanhamento de confiança para prevenir problemas odontológicos que podem se agravar com o tempo. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title-card">
-                    <h3>Limpeza</h3>
-                    <div class="icon-card">
-                        <img src="./media/checkTooth.png" alt="">
-                    </div>
-                </div>
-                <div class="text-card">
-                    <p>
-                        Procedimento de limpeza ,como finalidade acabar com as impurezas e manter os dentes bonitos e bem cuidados. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title-card">
-                    <h3>Exodontia</h3>
-                    <div class="icon-card">
-                        <img src="./media/exodontia.png" alt="">
-                    </div>
-                </div>
-                <div class="text-card">
-                    <p>
-                        Extração de dente com o melhor atendimento e praticidade.Aqui você pode resolver sua dor na dores no dente do siso,faturados e entre outros.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title-card">
-                    <h3>Restauração</h3>
-                    <div class="icon-card">
-                        <img src="./media/res.png" alt="">
-                    </div>
-                </div>
-                <div class="text-card">
-                    <p>
-                        Reconstrução  tem um papel fundamental na manutenção dos dentes ,e da saúde do corpo.Garatatindo uma otimá mastigação, que é o primeiro passo para que a comida chegue ao sistema digestório da maneira correta.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title-card">
-                    <h3>Raspagem</h3>
-                    <div class="icon-card">
-                        <img src="./media/ras.png" alt="">
-                    </div>
-                </div>
-                <div class="text-card">
-                    <p>
-                        A raspagem periodontal é um tratamento recomendado para curar diversos processos inflamatórios e infecciosos da gengiva.Além do mais, removendo o acúmulo de tártaro ou cálculo dental, melhorando a saúde dos tecidos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title-card">
-                    <h3>Clareamento Dental</h3>
-                    <div class="icon-card">
-                        <img src="./media/shineTooth.png" alt="">
-                    </div>
-                </div>
-                <div class="text-card">
-                    <p>
-                        Eliminar os pigmentos que deixam os dentes manchados ou escurecidos. Assim renovando o seu sorriso , e entregando uma melhor qualidade de vida.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <!--MOBILE-->
-        <div class="container">
-            <div class="display-mobile">
-                <article class="c-carousel c-carousel--simple">
-                    <div class="c-carousel__slides js-carousel--simple">
-                        <article class="c-carousel__slide">
-                            <div class="card mobile">
-
-                                <div class="title-card">
-                                    <h3>Prevenção</h3>
-                                    <div class="icon-card">
-                                        <img src="./media/prev.png" alt="">
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-card">
-                                    <p>
-                                        O melhor acompanhamento de confiança para prevenir problemas odontológicos que podem se agravar com o tempo. 
+                            </article>
+                            <article class="c-carousel__slide">
+                                <div class="card mobile">
+                                    <div class="title-card">
+                                        <h3>Limpeza</h3>
+                                        <div class="icon-card">
+                                            <img src="./media/checkTooth.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="text-card">
+                                        <p>
+                                            Procedimento de limpeza ,como
+                                            finalidade acabar com as impurezas e
+                                            manter os dentes bonitos e bem
+                                            cuidados.
 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="c-carousel__slide">
-                            <div class="card mobile">
-                                <div class="title-card">
-                                    <h3>Limpeza</h3>
-                                    <div class="icon-card">
-                                        <img src="./media/checkTooth.png" alt="">
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-card">
-                                    <p>
-                                        Procedimento de limpeza ,como finalidade acabar com as impurezas e manter os dentes bonitos e bem cuidados. 
+                            </article>
+                            <article class="c-carousel__slide">
+                                <div class="card mobile">
+                                    <div class="title-card">
+                                        <h3>Exodontia</h3>
+                                        <div class="icon-card">
+                                            <img src="./media/exodontia.png" alt>
+                                        </div>
+                                    </div>
+                                    <div class="text-card">
+                                        <p>
+                                            Extração de dente com o melhor
+                                            atendimento e praticidade.Aqui você
+                                            pode resolver sua dor no dente do
+                                            siso,faturado e entre outros.
 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="c-carousel__slide">
-                            <div class="card mobile">
-                                <div class="title-card">
-                                    <h3>Exodontia</h3>
-                                    <div class="icon-card">
-                                        <img src="./media/exodontia.png" alt="">
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-card">
-                                    <p>
-                                        Extração de dente com o melhor atendimento e praticidade.Aqui você pode resolver sua dor no dente do siso,faturado e entre outros.
+                            </article>
+                            <article class="c-carousel__slide">
+                                <div class="card mobile">
+                                    <div class="title-card">
+                                        <h3>Restauração</h3>
+                                        <div class="icon-card">
+                                            <img src="./media/res.png" alt>
+                                        </div>
+                                    </div>
+                                    <div class="text-card">
+                                        <p>
+                                            Reconstrução tem um papel
+                                            fundamental na manutenção dos dentes
+                                            ,e da saúde do corpo.Garatatindo uma
+                                            otimá mastigação, que é o primeiro
+                                            passo para que a comida chegue ao
+                                            sistema digestório da maneira
+                                            correta.
 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="c-carousel__slide">
-                            <div class="card mobile">
-                                <div class="title-card">
-                                    <h3>Restauração</h3>
-                                    <div class="icon-card">
-                                        <img src="./media/res.png" alt="">
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-card">
-                                    <p>
-                                        Reconstrução  tem um papel fundamental na manutenção dos dentes ,e da saúde do corpo.Garatatindo uma otimá mastigação, que é o primeiro passo para que a comida chegue ao sistema digestório da maneira correta.
+                            </article>
+                            <article class="c-carousel__slide">
+                                <div class="card mobile">
+                                    <div class="title-card">
+                                        <h3>Raspagem</h3>
+                                        <div class="icon-card">
+                                            <img src="./media/ras.png" alt>
+                                        </div>
+                                    </div>
+                                    <div class="text-card">
+                                        <p>
+                                            A raspagem periodontal é um
+                                            tratamento recomendado para curar
+                                            diversos processos inflamatórios e
+                                            infecciosos da gengiva.Além do mais,
+                                            removendo o acúmulo de tártaro ou
+                                            cálculo dental, melhorando a saúde
+                                            dos tecidos.
 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="c-carousel__slide">
-                            <div class="card mobile">
-                                <div class="title-card">
-                                    <h3>Raspagem</h3>
-                                    <div class="icon-card">
-                                        <img src="./media/ras.png" alt="">
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-card">
-                                    <p>
-                                        A raspagem periodontal é um tratamento recomendado para curar diversos processos inflamatórios e infecciosos da gengiva.Além do mais, removendo o acúmulo de tártaro ou cálculo dental, melhorando a saúde dos tecidos.
+                            </article>
+                            <article class="c-carousel__slide">
+                                <div class="card mobile">
+                                    <div class="title-card">
+                                        <h3>Clareamento Dental</h3>
+                                        <div class="icon-card">
+                                            <img src="./media/shineTooth.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="text-card">
+                                        <p>
+                                            Eliminar os pigmentos que deixam os
+                                            dentes manchados ou escurecidos.
+                                            Assim renovando o seu sorriso , e
+                                            entregando uma melhor qualidade de
+                                            vida.
 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="c-carousel__slide">
-                            <div class="card mobile">
-                                <div class="title-card">
-                                    <h3>Clareamento Dental</h3>
-                                    <div class="icon-card">
-                                        <img src="./media/shineTooth.png" alt="">
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-card">
-                                    <p>
-                                        Eliminar os pigmentos que deixam os dentes manchados ou escurecidos. Assim renovando o seu sorriso , e entregando uma melhor qualidade de vida.
+                            </article>
+                        </div>
+                        <div class="js-carousel--simple-dots"></div>
+                    </article>
+                </div>
+            </div>
 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
+        </section>
+
+        <!--CONTATO-->
+        <section id="contact" class="section contact">
+            <div class="title title-contact">
+                <h2> Entre em contato</h2>
+            </div>
+            <div class="list-contact">
+                <h3>Agende sua consulta conosco hoje e descubra como podemos
+                    ajudá-lo a obter um sorriso saudável e bonito </h3>
+                <div class="button-contact"><a target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://wa.me/message/BMPNVWC4QTNTM1"><button
+                            class="button-66" role="button">Marcar consulta</button></a>
+                </div>
+
+                <div class="location">
+                    <span class="name_location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        Prime OdontoMed,Rua Divina Pastora, 291 - Centro,
+                        Aracaju - SE, 49010-58
+                    </span>
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.85728710112335!2d-37.05191774921855!3d-10.909129759242472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab36f913c154d%3A0x2f452953f3210b83!2sR.%20Divina%20Pastora%2C%20291%20-%20Centro%2C%20Aracaju%20-%20SE%2C%2049010-600!5e0!3m2!1spt-BR!2sbr!4v1688678143707!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="js-carousel--simple-dots"></div>
-                </article>
-            </div>
-        </div>
+                </div>
 
-    </section>
+            </div>
+            <div class="social-media">
+                <h3>Me acompanhe nas redes sociais</h3>
+                <div class="box">
+                    <span class="social-icon">
+                        <img src="./media/iconsinstagram.svg" alt> <a
+                            href="https://www.instagram.com/dr.nathandantas/"
+                            target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer class="footer">
+            <p><span>Copyright &copy;<span id="date"></span> </span><br> <span>
+                    Made By <mark>Vogl</mark></span></p>
 
-    <!--CONTATO-->
-    <section id="contact" class="section contact">
-        <div class="title title-contact">
-            <h2> Entre em contato</h2>
-        </div>
-        <div class="list-contact">
-            <h3>Agende sua consulta conosco hoje e descubra como podemos ajudá-lo a obter um sorriso saudável e bonito </h3>
-            <div class="location">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg>
-              Clínica MedicMais,Av.Barão de Maruim,921-São Jose,Aracaju-SE
-            </div>
-            <div class="location">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg>
-                Clínica Amor Saude,R.Laranjeiras,422-Centro,Aracaju-SE
-            </div>
-            <div class="button-contact"><a target="_blank" rel="noopener noreferrer" href="https://wa.me/message/BMPNVWC4QTNTM1"><button class="button-66" role="button">Marcar consulta</button></a></div>
-            
-        </div>
-        <div class="social-media">
-            <h3>Me acompanhe nas redes sociais</h3>
-            <div class="box">
-                <span class="social-icon">
-                    <img src="./media/iconsinstagram.svg" alt=""> <a href="https://www.instagram.com/dr.nathandantas/"
-                        target="_blank" rel="noopener noreferrer">Instagram</a> </span>
-            </div>
-        </div>
-    </section>
-    <!--FOOTER-->
-    <footer class="footer">
-        <p><span>Copyright &copy;<span id="date"></span> </span><br> <span> Made By <mark>Vogl</mark></span></p>
-   
-    </footer>
-    <!-- javascript -->
+        </footer>
+        <!-- javascript -->
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-<script src="script.js"></script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="script.js"></script>
 
 </html>
